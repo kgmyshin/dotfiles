@@ -3,7 +3,7 @@ if ! (type "peco" > /dev/null 2>&1) ; then
 fi
 
 if ! (type "ghq" > /dev/null 2>&1) ; then
-    echo "pecoをインストールする必要があります"
+    echo "ghqをインストールする必要があります"
 fi
 
 if ! (type "studio" > /dev/null 2>&1) ; then

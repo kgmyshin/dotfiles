@@ -1,3 +1,4 @@
+autoload -U add-zsh-hook
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
