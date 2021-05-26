@@ -1,0 +1,3 @@
+[submodule ".zinit/bin"]
+	path = .zinit/bin
+	url = git@github.com:zdharma/zinit.git

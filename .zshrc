@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 [ -f ~/.zshrc.local ] && . ~/.zshrc.local
 
 ZSHC="${HOME}/.zshc"
