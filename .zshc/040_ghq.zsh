@@ -3,6 +3,8 @@
 ## required peco
 ## required ghq
 
+alias hubg='hub browse $(ghq list -e | peco | sed -e "s/github.com\///")'
+
 if is_osx || is_linux ; then
   alias asg='studio $(ghq list --full-path | peco)'
   alias codeg='code $(ghq list --full-path | peco)'
