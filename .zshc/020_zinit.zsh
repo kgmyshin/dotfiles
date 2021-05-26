@@ -13,6 +13,7 @@ zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::flutter
 zinit snippet OMZP::tig
+zinit snippet OMZP::github
 zinit snippet OMZP::zsh-interactive-cd
 zinit cdclear -q
 
