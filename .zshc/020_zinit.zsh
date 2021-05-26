@@ -17,3 +17,4 @@ zinit snippet OMZP::zsh-interactive-cd
 zinit cdclear -q
 
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light mollifier/cd-gitroot
