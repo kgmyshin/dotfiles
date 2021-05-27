@@ -1,6 +1,6 @@
 DOTPATH    := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 CANDIDATES := $(wildcard .??*)
-EXCLUSIONS := .DS_Store .git .gitignore
+EXCLUSIONS := .DS_Store .git .gitignore .gitconfig
 DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
 .DEFAULT_GOAL := help
@@ -10,10 +10,11 @@ all:
 list: ## Show dot files in this repo
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
-install: ## Create symlink to home directory
+install: ## Create symlink to home directory, and copy .gitconfig ( since gitconfig symlink doesn't work on windows )
 	@echo '==> Start to deploy dotfiles to home directory.'
 	@echo ''
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+	cp -f .gitconfig $(HOME)/.gitconfig
 
 clean: ## Remove the dot files and this repo
 	@echo 'Remove dot files in your home directory...'
