@@ -15,7 +15,7 @@ elif is_linux ; then;
   alias codeg='code $(ghq list --full-path | peco)'
   alias cdg='cd $(ghq list --full-path | peco)'
 elif is_win ; then;
-  alias asg='studio $(ghq list --full-path | peco | xargs wslpath -w)'
+  alias asg="ghq list --full-path | peco | xargs wslpath -m | { xargs zsh -ic 'studio \$0' &> /dev/null & }"
   alias codeg='code "$(ghq list --full-path | peco | xargs wslpath -w)"'
   alias cdg='cd $(ghq list --full-path | peco)'
   alias opend='open $(ghq list --full-path | peco | xargs wslpath -w )'
