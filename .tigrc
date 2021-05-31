@@ -1,2 +1,2 @@
 set vertical-split = true 
-
+bind status D !@?rm %(file)
