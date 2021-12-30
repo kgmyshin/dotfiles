@@ -6,3 +6,5 @@
 if is_win ; then;
   alias open="explorer.exe"
 fi
+
+alias java-list="/usr/libexec/java_home -V"
