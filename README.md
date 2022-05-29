@@ -1,8 +1,5 @@
-## Getting Started
+## How to install
 
 ```
-git clone git@github.com:kgmyshin/dotfiles.git dotfiles
-cd dotfiles
-git submodule update -i
-make install
+bash -c "$(curl -L dot.kgmyshin.com)"
 ```
