@@ -1,6 +1,3 @@
-THIS_DIR=$(cd $(dirname $0); pwd)
-pushd $THIS_DIR
-
 OS="$(uname)"
 if [[ "${OS}" == "Linux" ]]
 then
@@ -22,16 +19,4 @@ else
   HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 fi
 
-echo "installing Homebrew ..."
-type "brew" > /dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 eval $(${HOMEBREW_PREFIX}/bin/brew shellenv)
-echo "run brew doctor ..."
-brew doctor
-echo "run brew update ..."
-brew update
-echo "ok. run brew upgrade ..."
-brew upgrade
-brew bundle
-brew cleanup
-
-popd

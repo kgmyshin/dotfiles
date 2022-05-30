@@ -21,6 +21,7 @@ if [ ! -d ${DOT_DIR} ]; then
 
     cd ${DOT_DIR}
     make install
+    chmod +x ./etc/init/common/install.sh
     ./etc/init/common/install.sh
 else
     echo "dotfiles already exists"
