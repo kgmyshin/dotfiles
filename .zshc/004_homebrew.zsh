@@ -19,7 +19,7 @@ fi
 
 if [ ! -e ${HOMEBREW_PREFIX}/bin/brew ]; then
   echo "installing Homebrew ..."
-  type "brew" > /dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  type "brew" > /dev/null 2>&1 || NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   eval $(${HOMEBREW_PREFIX}/bin/brew shellenv)
   echo "run brew doctor ..."
   brew doctor
