@@ -17,4 +17,18 @@ else
   HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 fi
 
+if ! (type "brew" > /dev/null 2>&1) ; then
+  echo "installing Homebrew ..."
+  type "brew" > /dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  eval $(${HOMEBREW_PREFIX}/bin/brew shellenv)
+  echo "run brew doctor ..."
+  brew doctor
+  echo "run brew update ..."
+  brew update
+  echo "ok. run brew upgrade ..."
+  brew upgrade
+  brew bundle --global
+  brew cleanup
+fi
+
 eval $(${HOMEBREW_PREFIX}/bin/brew shellenv)
