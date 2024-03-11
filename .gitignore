@@ -1,5 +1,5 @@
 .DS_Store
-/.config/karabiner/automatic_backups/
-/.config/flutter
+.config
+!/.config/karabiner/karabiner.json
 /.zinit/*
 !/.zinit/bin
