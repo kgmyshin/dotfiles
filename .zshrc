@@ -1,7 +1,5 @@
 #!/usr/bin/zsh
 
-[ -f ~/.zshrc.local ] && . ~/.zshrc.local
-
 ZSHC="${HOME}/.zshc"
 if [ -d $ZSHC -a -r $ZSHC -a \
      -x $ZSHC ]; then
@@ -10,3 +8,5 @@ if [ -d $ZSHC -a -r $ZSHC -a \
             [ \( -f $i -o -h $i \) -a -r $i ] && . $i
     done
 fi
+
+[ -f ~/.zshrc.local ] && . ~/.zshrc.local
