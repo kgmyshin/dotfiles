@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 
 if OS.mac?
 	cask "docker"
+	cask "1password"
 	cask "notion"
 	cask "slack"
 	cask "visual-studio-code"
