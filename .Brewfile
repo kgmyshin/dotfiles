@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+tap "leoafarias/fvm"
 
 if OS.mac?
 	cask "docker"
@@ -19,3 +20,4 @@ brew "peco"
 brew "ghq"
 brew "tig"
 brew "kubectl"
+brew "fvm"
