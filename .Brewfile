@@ -1,18 +1,14 @@
 tap "homebrew/bundle"
-tap "homebrew/core"
 
 if OS.mac?
-	tap "homebrew/cask"
-	tap "homebrew/cask-fonts"
 	cask "docker"
-	cask "google-chrome"
 	cask "notion"
 	cask "slack"
-	cask "toggl-track"
 	cask "visual-studio-code"
 	cask "zoom"
 	cask "karabiner-elements"
 	cask "authy"
+	cask "cursor"
 end
 
 brew "anyenv"
