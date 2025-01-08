@@ -23,4 +23,3 @@ zinit cdclear -q
 
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light mollifier/cd-gitroot
-zinit light zpm-zsh/ls.git
