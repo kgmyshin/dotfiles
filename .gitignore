@@ -3,3 +3,4 @@
 !/.config/karabiner/karabiner.json
 /.zinit/*
 !/.zinit/bin
+.kube/cache
