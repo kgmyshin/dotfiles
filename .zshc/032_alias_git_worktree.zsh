@@ -13,7 +13,7 @@ wta() {
   local worktree_dir="~/.worktrees/$branch_name"
   
   # worktreesディレクトリが存在しない場合は作成
-  mkdir -p ../worktrees
+  mkdir -p ~/.worktrees
   
   # worktreeを追加
   git worktree add "$worktree_dir" "$branch_name"
